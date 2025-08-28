@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Agarwal | Academic Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #1f2937; scroll-behavior: smooth; }
+    a { text-decoration: none; color: inherit; }
+    h1, h2, h3, h4 { color: #1e40af; }
+    section { padding: 60px 20px; max-width: 900px; margin: auto; }
+    .container { max-width: 900px; margin: auto; padding: 0 20px; }
+
+    /* Header */
+    header { background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 50; }
+    header .nav { display: flex; justify-content: space-between; align-items: center; padding: 16px; }
+    header nav a { margin-left: 20px; font-weight: 500; transition: color 0.3s; }
+    header nav a:hover { color: #2563eb; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 100px 20px; background: linear-gradient(to right, #dbeafe, #bfdbfe); }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 20px; opacity: 0; transform: translateY(20px); animation: fadeSlide 1s forwards; }
+    .hero p { font-size: 1.2rem; max-width: 600px; margin: auto; opacity: 0; transform: translateY(20px); animation: fadeSlide 1s forwards 0.5s; }
+
+    @keyframes fadeSlide {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Card */
+    .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 20px; }
+    .card h4 { font-size: 1.2rem; margin-bottom: 8px; }
+    .card p { font-size: 0.95rem; color: #4b5563; }
+
+    /* Buttons */
+    .btn { display: inline-block; background: #2563eb; color: #fff; padding: 10px 18px; border-radius: 6px; font-weight: 500; transition: background 0.3s; }
+    .btn:hover { background: #1e40af; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px; background: #f3f4f6; font-size: 0.875rem; color: #6b7280; }
+    footer a { color: #2563eb; }
+
+    /* Contact Links */
+    .contact-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .contact-links a { display: flex; align-items: center; gap: 8px; font-weight: 500; color: #1f2937; transition: color 0.3s; }
+    .contact-links a:hover { color: #2563eb; }
+
+    /* Grid for Projects */
+    .grid { display: grid; gap: 20px; }
+    @media(min-width: 768px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav container">
+      <h1>Yash Agarwal</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#cv">CV</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Welcome to My Academic Profile</h2>
+    <p>Integrated B.Tech + M.Tech in Engineering Physics at IIT (BHU), focusing on nanomaterials, biosensing, and biophysics.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I am currently pursuing an Integrated B.Tech + M.Tech in Engineering Physics at IIT (BHU), Varanasi (2021–2026). My research interests include biosensing, nanotechnology, biophysics, and computational biology.</p>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <h3>Curriculum Vitae</h3>
+    <div class="card">
+      <p>You can view or download my CV here:</p>
+      <a href="/Yash_Agarwal_Resume.pdf" target="_blank" class="btn" rel="noopener noreferrer">View CV</a>
+    </div>
+  </section>
+
+  <!-- Research Projects -->
+  <section id="research">
+    <h3>Research Projects</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Monte-Carlo Simulation of Transport by Motor Proteins</h4>
+        <p>Mentor: Dr. Ambarish Kunwar | Dec 2024 – Present</p>
+        <p>Developing a 3D stochastic model to study cargo switching at microtubule intersections using Monte-Carlo simulations.</p>
+      </div>
+      <div class="card">
+        <h4>Bio-nanodots for Theranostic Applications (M.Tech Thesis)</h4>
+        <p>Mentor: Dr. Avanish Singh Parmar | Jan 2025 – May 2026</p>
+        <p>Lysozyme functionalized carbon nanodots for antibacterial, antifungal, and dopamine sensing applications.</p>
+      </div>
+      <div class="card">
+        <h4>Piezoelectricity of Amyloidogenic Hydrogel</h4>
+        <p>Mentor: Dr. Avanish Singh Parmar | Jul 2024 – May 2025</p>
+        <p>Studying piezoelectric properties of lysozyme hydrogel for wound healing, tissue engineering, and drug delivery.</p>
+      </div>
+      <div class="card">
+        <h4>ML Model for Classification of Diabetic Wound Images</h4>
+        <p>Mentor: Dr. Avanish Singh Parmar | Jan 2024 – Nov 2024</p>
+        <p>Created ML model for classifying diabetic wound severity using image processing and hospital collaborations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications">
+    <h3>Publications</h3>
+    <p>Upcoming publications will be updated here.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Feel free to reach out to me through the following channels:</p>
+    <div class="contact-links">
+      <a href="mailto:yash.agarwal.phy21@itbhu.ac.in">📧 Email</a>
+      <a href="https://www.linkedin.com/in/yash-agarwal-13675a230/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">🐱 GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © <span id="year"></span> Yash Agarwal | Built with HTML + CSS
+    <div><a href="#top">Back to Top ↑</a></div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
